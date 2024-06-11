@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.4",
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "scripts": {
+    "dev:tailwind": "tailwindcss -i ./style.css -o ./bundle.css --watch",
+    "build": "npx @11ty/eleventy && tailwindcss -i ./style.css -o ./bundle.css --minify"
+  }
+}

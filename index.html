@@ -1,0 +1,28 @@
+---
+layout: layout.html
+---
+
+<h1 class="text-3xl font-bold text-white mb-4">Posts</h1>
+
+<ul class="text-white mb-12">
+  {% for post in collections.post %}
+  <li class="items-center">
+    <span class="mr-10 hover:underline mb-4"><a href="{{ post.url}}">{{ post.data.dia }} | {{
+        post.data.title }}</a></span>
+
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h1 class="text-3xl font-bold text-white mb-4">Repos</h1>
+<ul class="text-white mb-12">
+  <li class="items-center">
+    <span class="mr-10 hover:underline"><a href="https://github.com/and-ribeiro/digitalmoney" target="_blank"
+        rel="noopener noreferrer">Digital Money</a></span>
+  </li>
+  <li class="items-center">
+    <span class="mr-10 hover:underline"><a href="https://github.com/and-ribeiro/7wonders" target="_blank"
+        rel="noopener noreferrer">7Wonders</a></span>
+  </li>
+</ul>
